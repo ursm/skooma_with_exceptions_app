@@ -1,0 +1,21 @@
+openapi: 3.1.0
+
+info:
+  title: skooma_with_exceptions_app
+  version: 0.0.0
+
+paths:
+  /:
+    get:
+      responses:
+        '418':
+          description: I'm a teapot
+
+          content:
+            application/json:
+              schema:
+                type: object
+
+                properties:
+                  message:
+                    type: string
